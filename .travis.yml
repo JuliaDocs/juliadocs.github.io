@@ -11,4 +11,4 @@ notifications:
 
 script:
   - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
-  - julia -e 'Pkg.clone(pwd()); include("make.jl")'
+  - julia -e 'Pkg.add("Documenter"); include("make.jl")'
