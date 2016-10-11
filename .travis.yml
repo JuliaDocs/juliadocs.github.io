@@ -1,0 +1,14 @@
+language: julia
+
+os:
+  - linux
+
+julia:
+  - nightly
+
+notifications:
+  email: false
+
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'Pkg.clone(pwd()); include("make.jl")'
