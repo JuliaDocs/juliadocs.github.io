@@ -1,5 +1,8 @@
 using Documenter
 
+hascurl() = (try; success(`curl --version`); catch err; false; end)
+@show hascurl()
+
 makedocs(
     sitename = "JuliaDocs",
     format = Documenter.Formats.HTML,
