@@ -2,11 +2,14 @@ using Documenter
 
 makedocs(
     sitename = "JuliaDocs",
-    format = Documenter.Formats.HTML,
-    pages = ["Home" => "index.md"],
+    format = :html,
+    pages = [
+        "Home" => "index.md",
+    ],
 )
 
 deploydocs(
+    julia = "0.7",
     repo = "github.com/JuliaDocs/juliadocs.github.io.git",
     target = "build",
     deps = nothing,
