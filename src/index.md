@@ -26,7 +26,7 @@ PackageDefinition(
     "Documenter", "https://github.com/JuliaDocs/Documenter.jl",
     [
         "stable" => "https://juliadocs.github.io/Documenter.jl/stable/",
-        "latest" => "https://juliadocs.github.io/Documenter.jl/latest/",
+        "dev" => "https://juliadocs.github.io/Documenter.jl/dev/",
     ],
     [
         "https://travis-ci.org/JuliaDocs/Documenter.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/Documenter.jl",
@@ -37,8 +37,7 @@ PackageDefinition(
 PackageDefinition(
     "DocumenterMarkdown", "https://github.com/JuliaDocs/DocumenterMarkdown.jl",
     [
-        "stable" => "https://juliadocs.github.io/DocumenterMarkdown.jl/stable/",
-        "latest" => "https://juliadocs.github.io/DocumenterMarkdown.jl/latest/",
+        "README" => "https://github.com/JuliaDocs/DocumenterMarkdown.jl#documentermarkdown",
     ],
     [
         "https://travis-ci.org/JuliaDocs/DocumenterMarkdown.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/DocumenterMarkdown.jl",
@@ -49,8 +48,7 @@ PackageDefinition(
 PackageDefinition(
     "DocumenterLaTeX", "https://github.com/JuliaDocs/DocumenterLaTeX.jl",
     [
-        "stable" => "https://juliadocs.github.io/DocumenterLaTeX.jl/stable/",
-        "latest" => "https://juliadocs.github.io/DocumenterLaTeX.jl/latest/",
+        "README" => "https://github.com/JuliaDocs/DocumenterLaTeX.jl#documenterlatex",
     ],
     [
         "https://travis-ci.org/JuliaDocs/DocumenterLaTeX.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/DocumenterLaTeX.jl",
@@ -61,8 +59,7 @@ PackageDefinition(
 PackageDefinition(
     "DocumenterTools", "https://github.com/JuliaDocs/DocumenterTools.jl",
     [
-        "stable" => "https://juliadocs.github.io/DocumenterTools.jl/stable/",
-        "latest" => "https://juliadocs.github.io/DocumenterTools.jl/latest/",
+        "README" => "https://github.com/JuliaDocs/DocumenterTools.jl#documentertools",
     ],
     [
         "https://travis-ci.org/JuliaDocs/DocumenterTools.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/DocumenterTools.jl",
@@ -74,7 +71,7 @@ PackageDefinition(
     "DocStringExtensions", "https://github.com/JuliaDocs/DocStringExtensions.jl",
     [
         "stable" => "https://juliadocs.github.io/DocStringExtensions.jl/stable/",
-        "latest" => "https://juliadocs.github.io/DocStringExtensions.jl/latest/",
+        "dev" => "https://juliadocs.github.io/DocStringExtensions.jl/dev/",
     ],
     [
         "https://travis-ci.org/JuliaDocs/DocStringExtensions.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/DocStringExtensions.jl",
@@ -86,7 +83,7 @@ PackageDefinition(
     "Highlights", "https://github.com/JuliaDocs/Highlights.jl",
     [
         "stable" => "https://juliadocs.github.io/Highlights.jl/stable/",
-        "latest" => "https://juliadocs.github.io/Highlights.jl/latest/",
+        "dev" => "https://juliadocs.github.io/Highlights.jl/dev/",
     ],
     [
         "https://travis-ci.org/JuliaDocs/Highlights.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/Highlights.jl",
