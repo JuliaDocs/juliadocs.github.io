@@ -4,8 +4,9 @@ This is the landing page of the [JuliaDocs GitHub organisation](https://github.c
 JuliaDocs is an umbrella organization for documentation-related packages and repositories
 of [Julia programming language](https://julialang.org/) ecosystem.
 
-If you are looking for the documentation for the core Julia language, you should head over
-to <https://docs.julialang.org/>
+!!! note
+    If you are looking for the documentation for the core Julia language, you should head over
+    to <https://docs.julialang.org/>
 
 JuliaDocs is the home for the following packages and repositories:
 
