@@ -6,7 +6,6 @@ struct PackageDefinition
     name :: String
     url :: String
     docs :: Vector{Pair{String, String}} # type => URL
-    pkgevals :: Vector{String} # versions
     buildbadges :: Vector{Pair{String, String}} # badge => URL
 end
 
@@ -22,13 +21,6 @@ function markdown(p::PackageDefinition)
     ])
     push!(row, [
         Markdown.Link(
-            [Markdown.Image("http://pkg.julialang.org/badges/$(p.name)_$(ver).svg", "$(ver)")],
-            "http://pkg.julialang.org/?pkg=$(p.name)&ver=$(ver)"
-        )
-        for ver in p.pkgevals
-    ])
-    push!(row, [
-        Markdown.Link(
             [Markdown.Image(image, "")],
             url
         )
@@ -37,10 +29,10 @@ function markdown(p::PackageDefinition)
 end
 
 function package_table_markdown(packages)
-    titles = map(["Package", "Documentation", "PackageEvaluator", "Build Status"]) do s
+    titles = map(["Package", "Documentation", "Build Status"]) do s
         Markdown.Bold(s)
     end
-    table = Markdown.Table([titles], [:l, :c, :c, :c])
+    table = Markdown.Table([titles], [:l, :c, :c])
     for p in packages
         push!(table.rows, markdown(p))
     end

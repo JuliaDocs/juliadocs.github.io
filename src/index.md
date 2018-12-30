@@ -25,7 +25,6 @@ PackageDefinition(
         "stable" => "https://juliadocs.github.io/Documenter.jl/stable/",
         "latest" => "https://juliadocs.github.io/Documenter.jl/latest/",
     ],
-    ["0.7", "0.6", "0.5", "0.4"],
     [
         "https://travis-ci.org/JuliaDocs/Documenter.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/Documenter.jl",
         "https://ci.appveyor.com/api/projects/status/xx7nimfpnl1r4gx0?svg=true" => "https://ci.appveyor.com/project/JuliaDocs/documenter-jl",
@@ -38,7 +37,6 @@ PackageDefinition(
         "stable" => "https://juliadocs.github.io/DocStringExtensions.jl/stable/",
         "latest" => "https://juliadocs.github.io/DocStringExtensions.jl/latest/",
     ],
-    ["0.7", "0.6", "0.5", "0.4"],
     [
         "https://travis-ci.org/JuliaDocs/DocStringExtensions.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/DocStringExtensions.jl",
         "https://ci.appveyor.com/api/projects/status/7bixd69chxps91wx/branch/master?svg=true" => "https://ci.appveyor.com/project/JuliaDocs/docstringextensions-jl/branch/master",
@@ -51,7 +49,6 @@ PackageDefinition(
         "stable" => "https://juliadocs.github.io/Highlights.jl/stable/",
         "latest" => "https://juliadocs.github.io/Highlights.jl/latest/",
     ],
-    ["0.7", "0.6", "0.5", "0.4"],
     [
         "https://travis-ci.org/JuliaDocs/Highlights.jl.svg?branch=master" => "https://travis-ci.org/JuliaDocs/Highlights.jl",
         "https://ci.appveyor.com/api/projects/status/qnphq3a8eph3o979/branch/master?svg=true" => "https://ci.appveyor.com/project/MichaelHatherly/highlights-jl/branch/master",
