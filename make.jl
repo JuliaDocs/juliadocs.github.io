@@ -45,6 +45,8 @@ makedocs(
     pages = [
         "Home" => "index.md",
     ],
+    format = Documenter.HTML(edit_branch = "source"),
+    analytics = "UA-136089579-1",
 )
 
 deploydocs(
