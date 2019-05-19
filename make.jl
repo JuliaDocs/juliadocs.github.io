@@ -48,8 +48,8 @@ makedocs(
     format = Documenter.HTML(
         edit_branch = "source",
         assets = ["assets/favicon.ico"],
+        analytics = "UA-136089579-1",
     ),
-    analytics = "UA-136089579-1",
 )
 
 deploydocs(
