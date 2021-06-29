@@ -56,4 +56,6 @@ deploydocs(
     repo = "github.com/JuliaDocs/juliadocs.github.io.git",
     branch = "master",
     devbranch = "source",
+    versions = nothing,
+    push_preview = true,
 )
