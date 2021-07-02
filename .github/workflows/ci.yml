@@ -1,9 +1,9 @@
-name: CI
+name: Documenter build
 
 on:
   push:
     branches:
-      - 'master'
+      - 'source'
     tags: '*'
   pull_request:
 
