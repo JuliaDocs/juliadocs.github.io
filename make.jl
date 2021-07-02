@@ -46,7 +46,7 @@ makedocs(
         "Home" => "index.md",
     ],
     format = Documenter.HTML(
-        edit_branch = "source",
+        edit_link = "source",
         assets = ["assets/favicon.ico"],
         analytics = "UA-136089579-1",
     ),
