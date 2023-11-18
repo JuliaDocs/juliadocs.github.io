@@ -10,12 +10,13 @@ of [Julia programming language](https://julialang.org/) ecosystem.
 
 JuliaDocs is the home for the following packages and repositories:
 
-* [Documenter -- package to combine docstrings with Markdown pages for generating documentation](https://github.com/JuliaDocs/Documenter.jl)
+* [Documenter -- Package to combine docstrings with Markdown pages for generating documentation](https://github.com/JuliaDocs/Documenter.jl)
+* [DocumenterCitations -- Support for BibTeX citations in Documenter](https://github.com/JuliaDocs/DocumenterCitations.jl)
 * [DocumenterMarkdown -- Documenter's Markdown / MkDocs backend](https://github.com/JuliaDocs/DocumenterMarkdown.jl)
 * [DocumenterLaTeX -- Documenter's LaTeX / PDF backend](https://github.com/JuliaDocs/DocumenterLaTeX.jl)
 * [DocumenterTools -- Extra tools for setting up Documenter](https://github.com/JuliaDocs/DocumenterTools.jl)
-* [DocStringExtensions -- programmatic ways to generate parts of docstrings](https://github.com/JuliaDocs/DocStringExtensions.jl)
-* [Highlights -- a code highlighter for the Julia language, written in Julia](https://github.com/JuliaDocs/Highlights.jl)
+* [DocStringExtensions -- Programmatic ways to generate parts of docstrings](https://github.com/JuliaDocs/DocStringExtensions.jl)
+* [Highlights -- A code highlighter for the Julia language, written in Julia](https://github.com/JuliaDocs/Highlights.jl)
 * [Julia cheat sheet](https://cheatsheet.juliadocs.org/) ([repository](https://github.com/JuliaDocs/Julia-Cheat-Sheet))
 
 ## Packages
@@ -31,6 +32,16 @@ PackageDefinition(
     ],
     [
         "https://codecov.io/gh/JuliaDocs/Documenter.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/Documenter.jl",
+    ]
+),
+PackageDefinition(
+    "DocumenterCitations", "https://github.com/JuliaDocs/DocumenterCitations.jl",
+    [
+        "stable" => "https://juliadocs.org/DocumenterCitations.jl/stable/",
+        "dev" => "https://juliadocs.org/DocumenterCitations.jl/dev/",
+    ],
+    [
+        "https://codecov.io/gh/JuliaDocs/DocumenterCitations.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterCitations.jl",
     ]
 ),
 PackageDefinition(
