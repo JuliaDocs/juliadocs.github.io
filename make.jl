@@ -29,7 +29,7 @@ function markdown(p::PackageDefinition)
 end
 
 function package_table_markdown(packages)
-    titles = map(["Package", "Documentation", "Build Status"]) do s
+    titles = map(["Package", "Documentation", "Coverage"]) do s
         Markdown.Bold(s)
     end
     table = Markdown.Table([titles], [:l, :c, :c])
