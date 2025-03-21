@@ -53,13 +53,13 @@ for r in repos
     desc = r["description"]
     branch = r["defaultBranchRef"]["name"]
 
-    println("""
+    print("""
     PackageDefinition(
         "$name_no_suffix", "$url",
         [
     """)
     if isempty(homepageUrl)
-        println("""
+        print("""
                 "README" => "https://github.com/JuliaDocs/$name",
         """)
     else
@@ -67,12 +67,12 @@ for r in repos
         if endswith(homepageUrl, "/stable")
             homepageUrl = replace(homepageUrl, "/stable" => "")
         end
-        println("""
+        print("""
                 "stable" => "$(joinpath(homepageUrl,"stable/"))",
                 "dev" => "$(joinpath(homepageUrl,"dev/"))",
         """)
     end
-    println("""
+    print("""
         ],
         [
             "https://codecov.io/gh/JuliaDocs/$name/branch/$branch/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/$name",
