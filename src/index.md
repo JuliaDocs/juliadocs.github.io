@@ -13,7 +13,6 @@ JuliaDocs is the home for the following packages and repositories:
 * [Documenter -- Package to combine docstrings with Markdown pages for generating documentation](https://github.com/JuliaDocs/Documenter.jl)
 * [DocumenterCitations -- Support for BibTeX citations in Documenter](https://github.com/JuliaDocs/DocumenterCitations.jl)
 * [DocumenterMarkdown -- Documenter's Markdown / MkDocs backend](https://github.com/JuliaDocs/DocumenterMarkdown.jl)
-* [DocumenterLaTeX -- Documenter's LaTeX / PDF backend](https://github.com/JuliaDocs/DocumenterLaTeX.jl)
 * [DocumenterTools -- Extra tools for setting up Documenter](https://github.com/JuliaDocs/DocumenterTools.jl)
 * [DocStringExtensions -- Programmatic ways to generate parts of docstrings](https://github.com/JuliaDocs/DocStringExtensions.jl)
 * [Highlights -- A code highlighter for the Julia language, written in Julia](https://github.com/JuliaDocs/Highlights.jl)
@@ -51,15 +50,6 @@ PackageDefinition(
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumenterMarkdown.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterMarkdown.jl",
-    ]
-),
-PackageDefinition(
-    "DocumenterLaTeX", "https://github.com/JuliaDocs/DocumenterLaTeX.jl",
-    [
-        "README" => "https://github.com/JuliaDocs/DocumenterLaTeX.jl#documenterlatex",
-    ],
-    [
-        "https://codecov.io/gh/JuliaDocs/DocumenterLaTeX.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterLaTeX.jl",
     ]
 ),
 PackageDefinition(
