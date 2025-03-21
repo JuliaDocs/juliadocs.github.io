@@ -39,264 +39,201 @@ import Main: PackageDefinition, package_table_markdown
 PackageDefinition(
     "ANSIColoredPrinters", "https://github.com/JuliaDocs/ANSIColoredPrinters.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/ANSIColoredPrinters.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/ANSIColoredPrinters.jl/branch/main/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/ANSIColoredPrinters.jl",
     ]
 ),
-
 PackageDefinition(
     "Changelog", "https://github.com/JuliaDocs/Changelog.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/Changelog.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/Changelog.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/Changelog.jl",
     ]
 ),
-
 PackageDefinition(
     "CodeEvaluation", "https://github.com/JuliaDocs/CodeEvaluation.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/CodeEvaluation.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/CodeEvaluation.jl/branch/main/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/CodeEvaluation.jl",
     ]
 ),
-
 PackageDefinition(
     "DemoCards", "https://github.com/JuliaDocs/DemoCards.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/DemoCards.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DemoCards.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DemoCards.jl",
     ]
 ),
-
 PackageDefinition(
     "DocInventories", "https://github.com/JuliaDocs/DocInventories.jl",
     [
-
         "stable" => "https://juliadocs.org/DocInventories.jl/stable/",
         "dev" => "https://juliadocs.org/DocInventories.jl/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocInventories.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocInventories.jl",
     ]
 ),
-
 PackageDefinition(
     "DocStringExtensions", "https://github.com/JuliaDocs/DocStringExtensions.jl",
     [
-
         "stable" => "https://DocStringExtensions.juliadocs.org/latest/stable/",
         "dev" => "https://DocStringExtensions.juliadocs.org/latest/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocStringExtensions.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocStringExtensions.jl",
     ]
 ),
-
 PackageDefinition(
     "DocumentationGenerator", "https://github.com/JuliaDocs/DocumentationGenerator.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/DocumentationGenerator.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumentationGenerator.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumentationGenerator.jl",
     ]
 ),
-
 PackageDefinition(
     "DocumentationGeneratorRegistry", "https://github.com/JuliaDocs/DocumentationGeneratorRegistry",
     [
-
         "README" => "https://github.com/JuliaDocs/DocumentationGeneratorRegistry",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumentationGeneratorRegistry/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumentationGeneratorRegistry",
     ]
 ),
-
 PackageDefinition(
     "Documenter", "https://github.com/JuliaDocs/Documenter.jl",
     [
-
         "stable" => "https://documenter.juliadocs.org/stable/",
         "dev" => "https://documenter.juliadocs.org/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/Documenter.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/Documenter.jl",
     ]
 ),
-
 PackageDefinition(
     "DocumenterCitations", "https://github.com/JuliaDocs/DocumenterCitations.jl",
     [
-
         "stable" => "https://juliadocs.github.io/DocumenterCitations.jl/stable/",
         "dev" => "https://juliadocs.github.io/DocumenterCitations.jl/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumenterCitations.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterCitations.jl",
     ]
 ),
-
 PackageDefinition(
     "DocumenterInterLinks", "https://github.com/JuliaDocs/DocumenterInterLinks.jl",
     [
-
         "stable" => "http://juliadocs.org/DocumenterInterLinks.jl/stable/",
         "dev" => "http://juliadocs.org/DocumenterInterLinks.jl/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumenterInterLinks.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterInterLinks.jl",
     ]
 ),
-
 PackageDefinition(
     "DocumenterInventoryWritingBackport", "https://github.com/JuliaDocs/DocumenterInventoryWritingBackport.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/DocumenterInventoryWritingBackport.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumenterInventoryWritingBackport.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterInventoryWritingBackport.jl",
     ]
 ),
-
 PackageDefinition(
     "DocumenterMarkdown", "https://github.com/JuliaDocs/DocumenterMarkdown.jl",
     [
-
         "stable" => "https://DocumenterMarkdown.juliadocs.org/stable/",
         "dev" => "https://DocumenterMarkdown.juliadocs.org/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumenterMarkdown.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterMarkdown.jl",
     ]
 ),
-
 PackageDefinition(
     "DocumenterMermaid", "https://github.com/JuliaDocs/DocumenterMermaid.jl",
     [
-
         "stable" => "https://juliadocs.org/DocumenterMermaid.jl/stable/",
         "dev" => "https://juliadocs.org/DocumenterMermaid.jl/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumenterMermaid.jl/branch/main/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterMermaid.jl",
     ]
 ),
-
 PackageDefinition(
     "DocumenterTools", "https://github.com/JuliaDocs/DocumenterTools.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/DocumenterTools.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DocumenterTools.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DocumenterTools.jl",
     ]
 ),
-
 PackageDefinition(
     "Highlights", "https://github.com/JuliaDocs/Highlights.jl",
     [
-
         "stable" => "https://highlights.juliadocs.org/stable/",
         "dev" => "https://highlights.juliadocs.org/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/Highlights.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/Highlights.jl",
     ]
 ),
-
 PackageDefinition(
     "IOCapture", "https://github.com/JuliaDocs/IOCapture.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/IOCapture.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/IOCapture.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/IOCapture.jl",
     ]
 ),
-
 PackageDefinition(
     "Julia-Cheat-Sheet", "https://github.com/JuliaDocs/Julia-Cheat-Sheet",
     [
-
         "stable" => "https://cheatsheet.juliadocs.org/stable/",
         "dev" => "https://cheatsheet.juliadocs.org/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/Julia-Cheat-Sheet/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/Julia-Cheat-Sheet",
     ]
 ),
-
 PackageDefinition(
     "LiveServer", "https://github.com/JuliaDocs/LiveServer.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/LiveServer.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/LiveServer.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/LiveServer.jl",
     ]
 ),
-
 PackageDefinition(
     "MarkdownAST", "https://github.com/JuliaDocs/MarkdownAST.jl",
     [
-
         "stable" => "https://juliadocs.github.io/MarkdownAST.jl/stable/",
         "dev" => "https://juliadocs.github.io/MarkdownAST.jl/dev/",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/MarkdownAST.jl/branch/main/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/MarkdownAST.jl",
     ]
 ),
-
 PackageDefinition(
     "ModuleDocstrings", "https://github.com/JuliaDocs/ModuleDocstrings.jl",
     [
-
         "README" => "https://github.com/JuliaDocs/ModuleDocstrings.jl",
-
     ],
     [
         "https://codecov.io/gh/JuliaDocs/ModuleDocstrings.jl/branch/main/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/ModuleDocstrings.jl",
     ]
 ),
-
 ] |> package_table_markdown
 ```
