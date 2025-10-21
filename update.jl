@@ -1,16 +1,31 @@
+#
+# This script can regenerate index.md. You can run it via
+#
+#   julia --proj=. update.jl > src/index.md
+#
 using JSON
 
+# query information about all JuliaDocs repositories
 data = read(`gh repo list JuliaDocs --json "isArchived,description,homepageUrl,name,url,defaultBranchRef"`, String)
-
 repos = JSON.parse(data)
 
-# drop archived repositories
+# exclude archived repositories
 repos = filter!(x -> !x["isArchived"], repos)
 
-repos = filter!(x -> x["name"] != "juliadocs.github.io", repos)
+# exclude some other repostiroies
+excluded = [
+    "juliadocs.github.io",
+    "DocumentationGeneratorRegistry",
+]
+repos = filter!(x -> x["name"] ∉ excluded, repos)
 
+# sort alphabetical
 sort!(repos, by = x -> x["name"])
 
+
+# Now we print the index.md content. This just hardcoded a header and footer.
+# This is quick & dirty hack; a full template system might be nicer in theory,
+# but in practice this is good enough and dead simple.
 print("""
 # JuliaDocs
 
@@ -32,7 +47,7 @@ for r in repos
     println("* [$name -- $desc]($url)")
 end
 
-# TODO: should we linke to the homepage URL, if any, and provide the
+# TODO: should we link to the homepage URL, if any, and provide the
 # repository link separately, like it was done for the cheat sheet:
 #
 # * [Julia cheat sheet](https://cheatsheet.juliadocs.org/) ([repository](https://github.com/JuliaDocs/Julia-Cheat-Sheet))
