@@ -24,12 +24,15 @@ JuliaDocs is the home for the following packages and repositories:
 * [DocumenterMarkdown.jl -- Documenter's Markdown / MkDocs backend](https://github.com/JuliaDocs/DocumenterMarkdown.jl)
 * [DocumenterMermaid.jl -- Mermaid.js diagram intergration for Documenter.jl](https://github.com/JuliaDocs/DocumenterMermaid.jl)
 * [DocumenterTools.jl -- Extra tools for setting up Documenter](https://github.com/JuliaDocs/DocumenterTools.jl)
+* [Franklin.jl -- (yet another) static site generator. Simple, customisable, fast, maths with KaTeX, code evaluation, optional pre-rendering, in Julia.](https://github.com/JuliaDocs/Franklin.jl)
+* [FranklinTemplates.jl -- Simple website templates for Franklin.jl](https://github.com/JuliaDocs/FranklinTemplates.jl)
 * [Highlights.jl -- A source code highlighter for Julia.](https://github.com/JuliaDocs/Highlights.jl)
 * [IOCapture.jl -- Capturing standard output and error streams in Julia.](https://github.com/JuliaDocs/IOCapture.jl)
 * [Julia-Cheat-Sheet -- Julia Cheat Sheet](https://github.com/JuliaDocs/Julia-Cheat-Sheet)
 * [LiveServer.jl -- Simple development server with live-reload capability for Julia.](https://github.com/JuliaDocs/LiveServer.jl)
 * [MarkdownAST.jl -- Abstract syntax tree representation of Markdown documents in Julia](https://github.com/JuliaDocs/MarkdownAST.jl)
 * [ModuleDocstrings.jl -- ](https://github.com/JuliaDocs/ModuleDocstrings.jl)
+* [PkgPage.jl -- Create a beautiful landing page for your package in less than 10 minutes.](https://github.com/JuliaDocs/PkgPage.jl)
 
 ## Packages
 
@@ -179,6 +182,26 @@ PackageDefinition(
     ]
 ),
 PackageDefinition(
+    "Franklin", "https://github.com/JuliaDocs/Franklin.jl",
+    [
+        "stable" => "https://franklinjl.org/stable/",
+        "dev" => "https://franklinjl.org/dev/",
+    ],
+    [
+        "https://codecov.io/gh/JuliaDocs/Franklin.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/Franklin.jl",
+    ]
+),
+PackageDefinition(
+    "FranklinTemplates", "https://github.com/JuliaDocs/FranklinTemplates.jl",
+    [
+        "stable" => "https://tlienart.github.io/FranklinTemplates.jl/stable/",
+        "dev" => "https://tlienart.github.io/FranklinTemplates.jl/dev/",
+    ],
+    [
+        "https://codecov.io/gh/JuliaDocs/FranklinTemplates.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/FranklinTemplates.jl",
+    ]
+),
+PackageDefinition(
     "Highlights", "https://github.com/JuliaDocs/Highlights.jl",
     [
         "stable" => "https://highlights.juliadocs.org/stable/",
@@ -233,6 +256,16 @@ PackageDefinition(
     ],
     [
         "https://codecov.io/gh/JuliaDocs/ModuleDocstrings.jl/branch/main/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/ModuleDocstrings.jl",
+    ]
+),
+PackageDefinition(
+    "PkgPage", "https://github.com/JuliaDocs/PkgPage.jl",
+    [
+        "stable" => "https://tlienart.github.io/PkgPage.jl/stable/",
+        "dev" => "https://tlienart.github.io/PkgPage.jl/dev/",
+    ],
+    [
+        "https://codecov.io/gh/JuliaDocs/PkgPage.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/PkgPage.jl",
     ]
 ),
 ] |> package_table_markdown
