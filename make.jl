@@ -65,7 +65,7 @@ function generate_package_table_markdown()
     packages = PackageDefinition[]
     for r in repos
         name = r["name"]
-        name_no_suffix = endswith(name, ".jl") ? name[1:(end - 3)] : name
+        name_no_suffix = replace(name, ".jl" => "")
         url = r["url"]
         homepageUrl = r["homepageUrl"]
         desc = r["description"]
@@ -74,10 +74,6 @@ function generate_package_table_markdown()
         if isempty(homepageUrl)
             push!(docs, "README" => "https://github.com/JuliaDocs/$name")
         else
-            # HACK / workaround for Highlights.jl
-            if endswith(homepageUrl, "/stable")
-                homepageUrl = replace(homepageUrl, "/stable" => "")
-            end
             push!(docs, "stable" => joinpath(homepageUrl, "stable/"))
             push!(docs, "dev" => joinpath(homepageUrl, "dev/"))
         end
