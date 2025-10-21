@@ -42,7 +42,8 @@ import Main: PackageDefinition, package_table_markdown
 PackageDefinition(
     "ANSIColoredPrinters", "https://github.com/JuliaDocs/ANSIColoredPrinters.jl",
     [
-        "README" => "https://github.com/JuliaDocs/ANSIColoredPrinters.jl",
+        "stable" => "https://juliadocs.org/ANSIColoredPrinters.jl/stable/",
+        "dev" => "https://juliadocs.org/ANSIColoredPrinters.jl/dev/",
     ],
     [
         "https://codecov.io/gh/JuliaDocs/ANSIColoredPrinters.jl/branch/main/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/ANSIColoredPrinters.jl",
@@ -69,7 +70,8 @@ PackageDefinition(
 PackageDefinition(
     "DemoCards", "https://github.com/JuliaDocs/DemoCards.jl",
     [
-        "README" => "https://github.com/JuliaDocs/DemoCards.jl",
+        "stable" => "http://democards.juliadocs.org/stable/",
+        "dev" => "http://democards.juliadocs.org/dev/",
     ],
     [
         "https://codecov.io/gh/JuliaDocs/DemoCards.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/DemoCards.jl",
@@ -214,7 +216,8 @@ PackageDefinition(
 PackageDefinition(
     "IOCapture", "https://github.com/JuliaDocs/IOCapture.jl",
     [
-        "README" => "https://github.com/JuliaDocs/IOCapture.jl",
+        "stable" => "https://docs.juliahub.com/General/IOCapture/stable/stable/",
+        "dev" => "https://docs.juliahub.com/General/IOCapture/stable/dev/",
     ],
     [
         "https://codecov.io/gh/JuliaDocs/IOCapture.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/IOCapture.jl",
@@ -233,7 +236,8 @@ PackageDefinition(
 PackageDefinition(
     "LiveServer", "https://github.com/JuliaDocs/LiveServer.jl",
     [
-        "README" => "https://github.com/JuliaDocs/LiveServer.jl",
+        "stable" => "https://juliadocs.org/LiveServer.jl/stable/",
+        "dev" => "https://juliadocs.org/LiveServer.jl/dev/",
     ],
     [
         "https://codecov.io/gh/JuliaDocs/LiveServer.jl/branch/master/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/LiveServer.jl",
@@ -252,7 +256,8 @@ PackageDefinition(
 PackageDefinition(
     "ModuleDocstrings", "https://github.com/JuliaDocs/ModuleDocstrings.jl",
     [
-        "README" => "https://github.com/JuliaDocs/ModuleDocstrings.jl",
+        "stable" => "https://moduledocstrings.juliadocs.org/stable/",
+        "dev" => "https://moduledocstrings.juliadocs.org/dev/",
     ],
     [
         "https://codecov.io/gh/JuliaDocs/ModuleDocstrings.jl/branch/main/graph/badge.svg" => "https://codecov.io/gh/JuliaDocs/ModuleDocstrings.jl",
