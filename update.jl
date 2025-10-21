@@ -23,8 +23,8 @@ repos = filter!(x -> x["name"] ∉ excluded, repos)
 sort!(repos, by = x -> x["name"])
 
 
-# Now we print the index.md content. This just hardcoded a header and footer.
-# This is quick & dirty hack; a full template system might be nicer in theory,
+# Now we print the index.md content, using hardcoded header and footer. This
+# is a quick & dirty hack; a full template system might be nicer in theory,
 # but in practice this is good enough and dead simple.
 print("""
 # JuliaDocs
