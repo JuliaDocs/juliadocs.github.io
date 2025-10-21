@@ -4,7 +4,7 @@ data = read(`gh repo list JuliaDocs --json "isArchived,description,homepageUrl,n
 
 repos = JSON.parse(data)
 
-# drop archive repositories
+# drop archived repositories
 repos = filter!(x -> !x["isArchived"], repos)
 
 repos = filter!(x -> x["name"] != "juliadocs.github.io", repos)
