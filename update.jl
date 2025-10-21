@@ -12,10 +12,11 @@ repos = JSON.parse(data)
 # exclude archived repositories
 repos = filter!(x -> !x["isArchived"], repos)
 
-# exclude some other repostiroies
+# exclude some other repositories
 excluded = [
-    "juliadocs.github.io",
-    "DocumentationGeneratorRegistry",
+    "juliadocs.github.io",              # this repository, no point linking to it
+    "DocumentationGeneratorRegistry",   # kinda obsolete
+    "Julia-Cheat-Sheet",                # not a package
 ]
 repos = filter!(x -> x["name"] ∉ excluded, repos)
 
@@ -25,7 +26,7 @@ sort!(repos, by = x -> x["name"])
 
 # Now we print the index.md content, using hardcoded header and footer. This
 # is a quick & dirty hack; a full template system might be nicer in theory,
-# but in practice this is good enough and dead simple.
+# but in practice it is good enough and dead simple.
 print("""
 # JuliaDocs
 
@@ -38,21 +39,6 @@ of [Julia programming language](https://julialang.org/) ecosystem.
     to <https://docs.julialang.org/>
 
 JuliaDocs is the home for the following packages and repositories:
-""")
-
-for r in repos
-    name = r["name"]
-    url = r["url"]
-    desc = r["description"]
-    println("* [$name -- $desc]($url)")
-end
-
-# TODO: should we link to the homepage URL, if any, and provide the
-# repository link separately, like it was done for the cheat sheet:
-#
-# * [Julia cheat sheet](https://cheatsheet.juliadocs.org/) ([repository](https://github.com/JuliaDocs/Julia-Cheat-Sheet))
-
-print("""
 
 ## Packages
 
@@ -71,6 +57,7 @@ for r in repos
     print("""
     PackageDefinition(
         "$name_no_suffix", "$url",
+        "$desc",
         [
     """)
     if isempty(homepageUrl)
@@ -99,4 +86,9 @@ end
 print("""
 ] |> package_table_markdown
 ```
+
+## Other repositories
+
+* [Julia cheat sheet](https://cheatsheet.juliadocs.org/) ([repository](https://github.com/JuliaDocs/Julia-Cheat-Sheet))
+
 """)
