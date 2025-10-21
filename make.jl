@@ -14,7 +14,6 @@ end
 function markdown(p::PackageDefinition)
     row = Any[]
     push!(row, Markdown.Link(p.name, p.url))
-    push!(row, Markdown.parse(p.desc))
     push!(row, [
         Markdown.Link(
             [Markdown.Image("https://img.shields.io/badge/docs-$(ver)-blue.svg", "$(ver)")],
@@ -29,13 +28,14 @@ function markdown(p::PackageDefinition)
         )
         for (image, url) in p.buildbadges
     ])
+    push!(row, Markdown.parse(p.desc))
 end
 
 function package_table_markdown(packages)
-    titles = map(["Package", "Description", "Documentation", "Coverage"]) do s
+    titles = map(["Package", "Documentation", "Coverage", "Description"]) do s
         Markdown.Bold(s)
     end
-    table = Markdown.Table([titles], [:l, :l, :c, :c])
+    table = Markdown.Table([titles], [:l, :c, :c, :l])
     for p in packages
         push!(table.rows, markdown(p))
     end
