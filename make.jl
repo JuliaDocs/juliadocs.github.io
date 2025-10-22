@@ -35,7 +35,7 @@ function package_table_markdown(packages)
     titles = map(["Package", "Documentation", "Coverage", "Description"]) do s
         Markdown.Bold(s)
     end
-    table = Markdown.Table([titles], [:l, :c, :c, :l])
+    table = Markdown.Table([titles], [:l, :l, :l, :l])
     for p in packages
         push!(table.rows, markdown(p))
     end
@@ -73,8 +73,11 @@ function generate_package_table_markdown()
         docs = Pair{String, String}[]
         if isempty(homepageUrl)
             push!(docs, "README" => "https://github.com/JuliaDocs/$name")
+        elseif contains(name, "Franklin") || contains(name, "PkgPage")
+            # special case
+            push!(docs, "www" => homepageUrl)
         else
-            push!(docs, "stable" => joinpath(homepageUrl, "stable/"))
+            push!(docs, "stable" => homepageUrl)
             push!(docs, "dev" => joinpath(homepageUrl, "dev/"))
         end
 
