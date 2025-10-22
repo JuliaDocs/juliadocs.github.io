@@ -8,8 +8,6 @@ of [Julia programming language](https://julialang.org/) ecosystem.
     If you are looking for the documentation for the core Julia language, you should head over
     to <https://docs.julialang.org/>
 
-JuliaDocs is the home for the following packages and repositories:
-
 ## Packages
 
 ```@eval
